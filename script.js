@@ -42,3 +42,14 @@ document.addEventListener('keydown', function (e) {
     closeModal();
   }
 });
+
+// Implementing Smooth Scrolling
+
+btnLearnMore.addEventListener('click', (e) => {
+  console.log('in');
+  const s1coords = section1.getBoundingClientRect();
+
+  section1.scrollIntoView({ behavior: 'smooth' });
+});
+
+// Page navigation
